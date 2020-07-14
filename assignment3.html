@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  
+  <title> Current date</title>
+  <script type="text/javascript">
+var currenttoday = new Date();
+var dd = currenttoday.getDate();
+
+var mm = currenttoday.getMonth()+1; 
+var yyyy = currenttoday.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+currenttoday = mm+'-'+dd+'-'+yyyy;
+document.write( currenttoday);
+currenttoday = mm+'/'+dd+'/'+yyyy;
+document.write( currenttoday);
+currenttoday = dd+'-'+mm+'-'+yyyy;
+document.write( currenttoday);
+currenttoday = dd+'/'+mm+'/'+yyyy;
+document.write(currenttoday);
+
+
+
+  </script>
+
+  </head>
+  <body>
+  </body>
+  </html>
+  
